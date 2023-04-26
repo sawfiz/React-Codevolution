@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class Welcome extends Component {
   render() {
-    return <h1>Welcome</h1>;
+    return <h1>Welcome {this.props.name} aka {this.props.heroName}</h1>;
   }
 }
 

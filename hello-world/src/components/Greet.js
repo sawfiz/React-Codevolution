@@ -1,5 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Greet= () => <h1>Greet</h1>
+const Greet = (props) => {
+  console.log('🚀 ~ file: greet.js:4 ~ Greet ~ props:', props);
+  return (
+    <div>
+      <h1>
+        Greet {props.name} aka {props.heroName}
+      </h1>
+      {props.children}
+    </div>
+  );
+};
 
-export default Greet
+export default Greet;
